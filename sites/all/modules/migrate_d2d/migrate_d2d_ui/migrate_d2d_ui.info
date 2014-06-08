@@ -1,13 +1,13 @@
-name = "Sample D6 to D7 migration"
-description = "Migrate content from D6 site to D7"
+; $Id$
+name = "Drupal-to-Drupal migration UI"
+description = "Support for migrating external Drupal sites into the current site"
 package = "Development"
 core = 7.x
-hidden = TRUE
 
-dependencies[] = migrate
 dependencies[] = migrate_d2d
+dependencies[] = migrate_ui
 
-files[] = node.inc
+files[] = migrate_d2d_ui.migrate.inc
 
 ; Information added by Drupal.org packaging script on 2014-04-29
 version = "7.x-2.1-beta1+27-dev"
